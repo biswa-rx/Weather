@@ -13,7 +13,10 @@ public class WeatherType {
         this.weatherIcon = weatherIcon;
     }
 
-    public WeatherType getWeatherType(int weatherCode){
+    public WeatherType() {
+    }
+
+    public WeatherType getWeatherType(Integer weatherCode){
         switch (weatherCode){
             case 0:
                 return new WeatherType("Clear sky",R.drawable.ic_sunny);

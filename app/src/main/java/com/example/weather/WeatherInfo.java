@@ -1,5 +1,7 @@
 package com.example.weather;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.ArrayList;
 
 public class WeatherInfo {
@@ -11,7 +13,9 @@ public class WeatherInfo {
         private String timezone;
         private String timezone_abbreviation;
         private float elevation;
+    @SerializedName("hourly_units")
         Hourly_units Hourly_unitsObject;
+    @SerializedName("hourly")
         Hourly HourlyObject;
 
 
