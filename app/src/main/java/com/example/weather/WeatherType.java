@@ -5,7 +5,6 @@ import androidx.annotation.DrawableRes;
 public class WeatherType {
     private String weatherDesc;
 
-    @DrawableRes
     private int weatherIcon;
 
     public WeatherType(String weatherDesc, int weatherIcon) {
